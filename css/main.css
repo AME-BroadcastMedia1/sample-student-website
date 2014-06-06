@@ -13,7 +13,7 @@ body {
 
 #background::after{
   content: "";
-  background: url("../img/broccoli.png"); no-repeat center center fixed;
+  background: url("../img/broccoli.png"); no-repeat center fixed;
   background-size: cover;
   opacity: .3;
   top:150px;
@@ -35,9 +35,8 @@ a, a:active, a:visited {
 }
 
 header {
-  background: green;
-  height: 100px;
-  position: static;
+  background: #0a4b03;
+  height: 100%;
   width: 100%;
 }
 
@@ -48,14 +47,15 @@ header {
   display: block;
   margin-top: 0;
   overflow: hidden;
-}
+ }
 
 nav ul {
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+/*
+.navbar-item {
     cursor: pointer;
     display: inline-block;
     list-style-type: none;
@@ -65,9 +65,9 @@ nav ul li {
     -o-transition: all 0.2s;
     transition: all 0.2s;
 }
+*/
 
-
-nav > ul > li > div {
+.navbar-item div {
     background-color: rgb(124,224, 216);
     border-top: 0;
     border-radius: 0 0 4px 4px;
@@ -85,25 +85,24 @@ nav > ul > li > div {
     -transition: opacity 0.2s;
 }
 
-nav > ul > li:hover > div {
+.navbar-item:hover > div {
     display: block;
     opacity: 1;
     visibility: visible;
 }
 
-nav > ul > li > div ul > li {
+.navbar-item > div ul > li {
     display: block;
 }
 
-nav > ul > li > div ul > li > a {
+.navbar-item-dropdown-anchor {
     color: #fff;
-    font-weight: bold;
+    font-weight: normal;
     display: block;
-    padding: 12px 24px;
     line-height: 20px;
 }
 
-nav > ul > li > div ul > li:hover > a {
+.navbar-item > div ul > li:hover > a {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -111,31 +110,45 @@ nav ul {
   float: right;
   margin: 0;
 }
-nav > ul li {
-  border-bottom: 3px solid white;
+
+.navbar-item {
+  border-bottom: 2px solid white;
   height: 100%;
   float: left;
-  font-weight: 300;
   list-style-type: none;
-  margin-right: 1rem;
   transition: border-color 200ms ease-in-out;
   /* See: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transitions */
 }
 
-nav > ul li:hover, header nav > ul li.active {
+.navbar-item:hover, header nav > ul li.active {
   border-bottom-color: #0066CC;
 }
 
-nav > ul li:hover a, header nav > ul li.active a {
+.navbar-item:hover a, header nav > ul li.active a {
   color: #fff;
 }
 
 nav a {
   display: block;
-  line-height: 60px;
+  line-height: 40px;
   text-decoration: none;
   color: #fff;
+  margin-right: 30px;
   transition: color 200ms ease-in-out;
+}
+
+footer {
+  border-top: 1px dotted #999999;
+  clear: both;
+  padding: 1em 0;
+  margin-top: 400px;
+}
+
+footer p {
+  font-size: 0.75em;
+  padding: 0;
+  margin: 0;
+  font-family: "Georgia";
 }
 
 .gallery {
@@ -164,17 +177,7 @@ nav a {
   opacity: 0.5;
 }
 
-footer {
-  border-top: 1px dotted #999999;
-  clear: both;
-  padding: 1em 0;
-}
 
-footer p {
-  font-size: 0.75em;
-  padding: 0;
-  margin: 0;
-}
 
 
 /* I don't know what this is yet.
