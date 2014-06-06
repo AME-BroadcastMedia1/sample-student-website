@@ -1,8 +1,9 @@
 body {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   line-height: 1.6875rem;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  font-family: "Jokerman";
 }
 
 h1, h2, h3, h4 {
@@ -10,9 +11,21 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+  font-family: "elephant";
+  font-weight: bold;
   font-size: 2.1875rem;
   line-height: 3.375rem;
   margin: 1.6875rem 0;
+  color: #fff;
+}
+
+header h1 {
+  font-family: "elephant";
+  font-weight: bold;
+  font-size: 2.75rem;
+  margin-left: 45px;
+  margin-top: 0;
+
 }
 
 h2 {
@@ -28,11 +41,16 @@ h3 {
 }
 
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.15rem;
   line-height: 1.6875rem;
   margin: 1.6875rem 0;
 }
 
-p, ul, ol, pre, table, blockquote {
+/*what is a "pre"?  It was listed alongside the below*/
+p, ul, ol, {
   margin: 1.6875rem 0;
+  line-height: 3rem;
+  font-size: 2.1rem;
+  font-family: "Jokerman";
+  font-weight: bold;
 }

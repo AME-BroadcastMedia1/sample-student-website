@@ -4,16 +4,19 @@
 
 body {
   color: #BACFCF;
-  font-family: 'Georgia', 'Verdana', 'Arial', 'sans-serif';
   background-color: black;
     }
+
+#background{
+  margin-top: 0;
+}
 
 #background::after{
   content: "";
   background: url("../img/broccoli.png"); no-repeat center center fixed;
   background-size: cover;
   opacity: .3;
-  top:20px;
+  top:150px;
   left:50px;
   bottom:0;
   right:0;
@@ -29,6 +32,13 @@ a, a:active, a:visited {
   margin: 0 auto;
   max-width: 750px;
   min-width: 480px;
+}
+
+header {
+  background: green;
+  height: 100px;
+  position: static;
+  width: 100%;
 }
 
 #navbar {
@@ -97,43 +107,11 @@ nav > ul > li > div ul > li:hover > a {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-footer {
-  border-top: 1px dotted #999999;
-  clear: both;
-  padding: 1em 0;
-}
-
-footer p {
-  font-size: 0.75em;
-  padding: 0;
-  margin: 0;
-}
-
-header {
-  background: #d1fcff;
-  border-bottom: 2px solid #0ad5d3;
-  height: 60px;
-  position: relative;
-  width: 100%;
-}
-
-header h1 {
-  float: left;
-  font-size: 1.75rem;
-  font-weight: 300;
-  margin: 0;
-}
-
-header h1 a, header h1 a:visited, header h1 a:active {
-  color: #333333;
-}
-
-header nav ul {
+nav ul {
   float: right;
   margin: 0;
 }
-
-header nav > ul li {
+nav > ul li {
   border-bottom: 3px solid white;
   height: 100%;
   float: left;
@@ -144,19 +122,19 @@ header nav > ul li {
   /* See: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transitions */
 }
 
-header nav > ul li:hover, header nav > ul li.active {
+nav > ul li:hover, header nav > ul li.active {
   border-bottom-color: #0066CC;
 }
 
-header nav > ul li:hover a, header nav > ul li.active a {
+nav > ul li:hover a, header nav > ul li.active a {
   color: #fff;
 }
 
-header nav a {
+nav a {
   display: block;
   line-height: 60px;
   text-decoration: none;
-  color: #333;
+  color: #fff;
   transition: color 200ms ease-in-out;
 }
 
@@ -186,6 +164,20 @@ header nav a {
   opacity: 0.5;
 }
 
+footer {
+  border-top: 1px dotted #999999;
+  clear: both;
+  padding: 1em 0;
+}
+
+footer p {
+  font-size: 0.75em;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* I don't know what this is yet.
 .profile-photo {
 }
 
