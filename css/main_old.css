@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #BACFCF;
+  background-color: black;
+    }
+
+#background{
+  margin-top: 0;
+}
+
+#background::after{
+  content: "";
+  background: url("../img/broccoli.png"); no-repeat center fixed;
+  background-size: cover;
+  opacity: .3;
+  top:150px;
+  left:50px;
+  bottom:0;
+  right:0;
+  position: absolute;
+  z-index: -1;
+};
+
+a, a:active, a:visited {
+  color: #0066CC;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 750px;
+  min-width: 480px;
+}
+
+header {
+  background: #0a4b03;
+  height: 100%;
+  width: 100%;
+}
+
+#navbar {
+  background-color: rgb(47, 47, 105);
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  color: #888;
+  display: block;
+  margin-top: 0;
+  overflow: hidden;
+ }
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+.navbar-item {
+    cursor: pointer;
+    display: inline-block;
+    list-style-type: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+*/
+
+.navbar-item div {
+    background-color: rgb(124,224, 216);
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    display: none;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    width: 165px;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -transition: opacity 0.2s;
+}
+
+.navbar-item:hover > div {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-item > div ul > li {
+    display: block;
+}
+
+.navbar-item-dropdown-anchor {
+    color: #fff;
+    font-weight: normal;
+    display: block;
+    line-height: 20px;
+}
+
+.navbar-item > div ul > li:hover > a {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul {
+  float: right;
+  margin: 0;
+}
+
+.navbar-item {
+  border-bottom: 2px solid white;
+  height: 100%;
+  float: left;
+  list-style-type: none;
+  transition: border-color 200ms ease-in-out;
+  /* See: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transitions */
+}
+
+.navbar-item:hover, header nav > ul li.active {
+  border-bottom-color: #0066CC;
+}
+
+.navbar-item:hover a, header nav > ul li.active a {
+  color: #fff;
+}
+
+nav a {
+  display: block;
+  line-height: 40px;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 30px;
+  transition: color 200ms ease-in-out;
+}
+
+footer {
+  border-top: 1px dotted #999999;
+  clear: both;
+  padding: 1em 0;
+  margin-top: 400px;
+}
+
+footer p {
+  font-size: 0.75em;
+  padding: 0;
+  margin: 0;
+  font-family: "Georgia";
+}
+
+.gallery {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery li {
+  background-color: #02aab5;
+  border: 1px solid #999999;
+  border-radius: 2px;
+  float: left;
+  list-style-type: none;
+  padding: 5px;
+  margin: 16px;
+}
+
+.gallery li img {
+  border-radius: 2px;
+  vertical-align: top;
+  height: 200px;
+  width: 200px;
+}
+
+.gallery li img:hover {
+  opacity: 0.5;
+}
+
+
+
+
+/* I don't know what this is yet.
+.profile-photo {
+}
+
+.profile-content {
+}
