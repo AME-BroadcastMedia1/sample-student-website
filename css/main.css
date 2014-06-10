@@ -3,12 +3,19 @@ body {
   background-color: black;
     }
 
+#background{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
 #background::after{
   content: "";
   background: url("../img/broccoli.png"); no-repeat center fixed;
   background-size: cover;
   opacity: .2;
-  top:150px;
+  top:75px;
   left:40px;
   bottom:100px;
   right:0;
@@ -38,6 +45,7 @@ header {
   display: block;
   margin-top: 0;
   overflow: hidden;
+  line-height: 50px;
  }
 
 nav ul {
@@ -46,33 +54,39 @@ nav ul {
     float: right;
   }
 
+.border{
+    border-bottom-color: blue;
+    visibility: none;
+}
+
 .nav-item {
     cursor: pointer;
     display: inline-block;
     list-style-type: none;
-    border-bottom: 1px solid white;
+    /*border-bottom: 2px solid white;*/
     height: 100%;
     float: left;
     list-style-type: none;
- 
+   
   /* See: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transitions */
 }
 
 .nav-item:hover a, nav > ul li.active a {
   color: #fff;
+  border-bottom: 2px solid white;
 }
 
 .nav-item div {
     background-color: #39a443;    
     position: absolute;
-    width: 195px;
+    width: 20px;
     opacity: 0;
     transition: all 300ms ease-in-out;
 }
 
 .nav-item:hover > div {
     display: block;
-    width: 195px;
+    width: 150px;
     opacity: 1;
 }
 
@@ -97,6 +111,8 @@ nav a {
   text-decoration: none;
   color: #fff;
   margin-right: 30px;
+  font-family: "Arial";
+  font-size: 18px;
   transition: color 200ms ease-in-out;
 }
 
@@ -104,7 +120,7 @@ footer {
   border-top: 1px dotted #999999;
   clear: both;
   padding: 1em 0;
-  margin-top: 400px;
+  margin-top: 800px;
 }
 
 footer p {
