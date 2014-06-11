@@ -81,7 +81,7 @@ nav ul {
     position: absolute;
     width: 20px;
     opacity: 0;
-    transition: all 300ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
 .nav-item:hover > div {
@@ -156,7 +156,13 @@ footer p {
   opacity: 0.5;
 }
 
-
+iframe {
+  width:550px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+ }
 
 
 /* I don't know what this is yet.
