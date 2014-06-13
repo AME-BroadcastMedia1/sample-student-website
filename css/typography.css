@@ -1,7 +1,7 @@
 body {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.6875rem;
-  font-family: "Georgia";
+  font-family: "Droid Serif";
 }
 
 h1, h2, h3, h4 {
@@ -9,20 +9,21 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-family: "elephant";
+  font-family: "Montserrat";
   font-weight: bold;
   font-size: 2.1875rem;
   line-height: 3.375rem;
   margin-left: 1.6875rem 0;
-  color: #fff;
+  color: #88A65E;
 }
 
 header h1 {
-  font-family: "elephant";
+  font-family: "Montserrat";
   font-weight: bold;
   font-size: 2.5rem;
-  margin-left: 30px;
-  margin-top: 0;
+  margin: 0 20px 0 20px;
+  animation: fadeInUp;
+  color: #F2C45A;
 
 }
 
@@ -47,9 +48,9 @@ h4 {
 /*what is a "pre"?  It was listed alongside the below*/
 p {
   margin: 1.6875rem 0;
-  line-height: 3rem;
-  font-size: 1.1rem;
-  font-family: "Georgia";
+  line-height: 1.8rem;
+  font-size: 1rem;
+  font-family: "Droid Serif";
   }
 
 ul, ol {

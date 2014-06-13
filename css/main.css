@@ -1,26 +1,25 @@
 body {
-  color: #fff;
+  color: black;
   background-color: black;
     }
 
 #background{
-  width: 100%;
-  height: 100%;
   display: block;
   position: relative;
+  margin: 0 150px 0 150px;
+  background-color: #88A65E;
 }
 
 #background::after{
   content: "";
-  background: url("../img/broccoli.png"); no-repeat center fixed;
-  background-size: cover;
-  opacity: .2;
-  top:75px;
-  left:40px;
+  background: url("../img/broccoli.png") no-repeat;
+  background-size: contain;
+  opacity:.1;
+  top:225px;
+  left:120px;
   bottom:100px;
   right:0;
   position: absolute;
-  z-index: -1;
 };
 
 a, a:active, a:visited {
@@ -28,24 +27,24 @@ a, a:active, a:visited {
 }
 
 .content {
-  margin-left: 30px;
-  max-width: 1200px;
-  min-width: 480px;
-}
+  margin: 0 100px 0 100px;
+ }
 
 header {
-  background: #0a4b03;
-  height: 100%;
-  width: 100%;
+  background: #8C2318;
+  margin: 0;
+  padding-bottom: 50px;
 }
 
 #navbar {
-  background-color: #2f2f69;
+  background-color: #5E8C6A;
   color: #888;
   display: block;
   margin-top: 0;
   overflow: hidden;
-  height: 50px;
+  height: 45px;
+  margin: 0;
+  z-index: 7;
  }
 
 nav ul {
@@ -73,17 +72,17 @@ nav ul {
 
 .nav-item:hover a, nav > ul li.active a {
   color: #fff;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #fff;
 }
 
 .nav-item div {
-    background-color: #39a443;    
+    background-color: #5E8C6A;    
     position: absolute;
     width: 150px;
     visibility: hidden;
     opacity: 0;
     transition: all 200ms ease-in-out;
-
+    z-index: 10;
 }
 
 .nav-item:hover > div {
@@ -104,7 +103,7 @@ nav ul {
 }
 
 .nav-item > div ul > li:hover > a {
-    background-color: #0a4b03;
+    background-color: #BFB35A;
 }
 
 nav a {
@@ -119,13 +118,16 @@ nav a {
 }
 
 footer {
-  border-top: 1px dotted #999999;
+  border-top: 1px dotted #8C2318;
   clear: both;
   padding: 1em 0;
-  margin-top: 800px;
+  margin-top: 600px;
   font-family: "Arial";
-  font-size: 0.5em;
-  opacity: .3;
+  font-size: .7em;
+  opacity: .7;
+  line-height: 15px;
+  color: #F2C45A;
+  background-color: #5E8C6A;
 }
 
 footer p {
@@ -167,7 +169,16 @@ iframe {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  border: solid #0a4b03 5px;
+
  }
+
+.frame{
+  z-index: 5;
+  position:relative;
+  opacity:1;
+
+}
 
 .flash-comment{
   text-align: center;
