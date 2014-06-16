@@ -1,4 +1,4 @@
-/**
+  /**
  * Lightbox v2.7.1
  * by Lokesh Dhakar - http://lokeshdhakar.com/projects/lightbox2/
  *
@@ -271,6 +271,9 @@
 
     // Display the image and it's details and begin preload neighboring images.
     Lightbox.prototype.showImage = function() {
+
+      console.log('showImage');
+
       this.$lightbox.find('.lb-loader').hide();
       this.$lightbox.find('.lb-image').fadeIn('slow');
     

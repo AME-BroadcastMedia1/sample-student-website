@@ -144,8 +144,7 @@ footer p {
 }
 
 .gallery li {
-  background-color: #02aab5;
-  border: 1px solid #999999;
+  background-color: black;
   border-radius: 2px;
   float: left;
   list-style-type: none;
