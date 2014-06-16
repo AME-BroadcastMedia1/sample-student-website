@@ -9,7 +9,7 @@ body {
   margin: 0 150px 0 150px;
   background-color: #88A65E;
 }
-
+/*
 #background::after{
   content: "";
   background: url("../img/broccoli.png") no-repeat;
@@ -21,6 +21,7 @@ body {
   right:0;
   position: absolute;
 };
+*/
 
 a, a:active, a:visited {
   color: #0066CC;
