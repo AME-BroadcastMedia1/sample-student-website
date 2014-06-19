@@ -23,6 +23,14 @@ body {
 };
 */
 
+.scriptcode {
+    display: inline-block;
+    position: absolute;
+    margin-top: 0;
+    overflow: hidden;
+    margin: 0;
+      }
+
 a, a:active, a:visited {
   color: #0066CC;
 }
