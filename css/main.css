@@ -8,6 +8,7 @@ body {
   position: relative;
   margin: 0 150px 0 150px;
   background-color: #88A65E;
+  height:2000px;
 }
 /*
 #background::after{
@@ -37,6 +38,7 @@ a, a:active, a:visited {
 
 .content {
   margin: 0 100px 0 100px;
+  height: 3000px
  }
 
 header {
